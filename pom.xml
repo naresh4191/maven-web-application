@@ -89,20 +89,20 @@
 		</dependency>
 
 	</dependencies>
-	<!--
+	
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://13.127.5.162:8081/#admin/repository/repositories:maven_project/</url>
+	      <name>nexusrepo</name>
+	      <url>http://ec2-13-127-195-4.ap-south-1.compute.amazonaws.com:8081/repository/newnexus/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.127.5.162:8081/#admin/repository/repositories:maven_project/</url>
+	      <name>nexus1repo </name>
+	      <url>http://ec2-13-127-195-4.ap-south-1.compute.amazonaws.com:8081/repository/newnexus//</url>
 	    </snapshotRepository>
 	</distributionManagement>
-	-->
+
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
