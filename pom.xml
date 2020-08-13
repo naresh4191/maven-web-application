@@ -118,7 +118,7 @@
         </releases>
     </repository>
 </repositories>
-
+<!--
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
@@ -135,5 +135,5 @@
 		</plugins>
 	</build>
 
-	
+	-->
 </project>
