@@ -101,7 +101,9 @@
 	      <name>nexus </name>
 	      <url>http://ec2-13-127-195-4.ap-south-1.compute.amazonaws.com:8081/repository/newnexus//</url>
 	    </snapshotRepository>
+	authentication(userName: "admin", password: "naresh@1616")
 	</distributionManagement>
+	
 
 	<build>
 		<finalName>maven-web-application</finalName>
