@@ -93,12 +93,12 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>nexusrepo</name>
+	      <name>nexus</name>
 	      <url>http://ec2-13-127-195-4.ap-south-1.compute.amazonaws.com:8081/repository/newnexus/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>nexus1repo </name>
+	      <name>nexus </name>
 	      <url>http://ec2-13-127-195-4.ap-south-1.compute.amazonaws.com:8081/repository/newnexus//</url>
 	    </snapshotRepository>
 	</distributionManagement>
