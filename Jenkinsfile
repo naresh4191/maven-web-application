@@ -1,6 +1,6 @@
 node  {
 
-    def mvnhome = tool name: 'Maven3.6.0' , type: 'maven'
+    def mvnhome = tool name: 'maven3', type: 'maven'
     
 stage ('checkout') {
           git 'https://github.com/naresh4191/maven-web-application'
@@ -8,7 +8,7 @@ stage ('checkout') {
 
  stage ('buidl')    { 
 
-           sh 'mvn package'
+           sh 'mvn package"
   }
     
     
