@@ -6,7 +6,7 @@ stage ('checkout') {
           git 'https://github.com/naresh4191/maven-web-application'
                    }
 
- stage ('buidl')    { 
+ stage ('build')    { 
 
            sh 'mvn package"
   }
