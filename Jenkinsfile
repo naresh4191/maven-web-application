@@ -3,7 +3,7 @@ node  {
     def mvnhome = tool name: 'maven3', type: 'maven'
     
 stage ('checkout') {
-          git 'https://github.com/naresh4191/maven-web-application'
+          git crdentialsID: "naresh4191", url: 'https://github.com/naresh4191/maven-web-application'
                    }
 
  stage ('build')    { 
