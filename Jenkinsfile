@@ -1,6 +1,5 @@
 node  {
   def mvnhome = tool name:'maven3', type:'maven'
-  def tomcatweb = 'root@172.31.34.1:/apache-tomcat-8.5.57/webapps'
        
 
 stage ('checkout') {
@@ -11,8 +10,7 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
   
   }
   stage ('deploy to tomcat') {
-    bat "scp target/maven-web-application-2.2-SNAPSHOT.war	\"${tomcatweb}\\maven-web-application-2.2-SNAPSHOT.war"    
-  }
+    bat "scp target/maven-web-application-2.2-SNAPSHOT.war	root@172.31.34.1:/apache-tomcat-8.5.57/webapps"
    
     
 }
