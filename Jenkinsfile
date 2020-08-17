@@ -1,12 +1,13 @@
 node  {
-    def mvnhome=toolname: 'maven3' , type: 'maven'
+    def mvnhome = toolname: 'maven3' , type: 'maven'
+    def "${mvnhome}/bin/mvn package"
 
 stage ('checkout') {
 git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-application/'
   }
 
  stage ('build')    { 
-     sh "${mvnhome}/opt/apache-maven-3.6.3/bin/mvn package"
+     sh "clean package"
   }
     
     
