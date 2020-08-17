@@ -14,7 +14,7 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
     sshagent(['tomcat']) {
     sh"""
     
-    scp -o StrictHostKeyChecking=no target/maven-web-application-2.2-SNAPSHOT.war root@172.31.34.1:/apache-tomcat-8.5.57/webapps/
+    scp -o StrictHostKeyChecking=no /root/.jenkins/workspace/pipeline/target/maven-web-application-2.2-SNAPSHOT.war root@172.31.34.1:/apache-tomcat-8.5.57/webapps/
     
     shh root@172.31.34.1 /apache-tomcat-8.5.57/bin/shutdown.sh
     
