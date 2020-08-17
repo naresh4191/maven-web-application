@@ -6,7 +6,7 @@ stage ('checkout') {
 git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-application/'
   }
  stage ('build')    { 
-   sh "${mvnhome}/bin/mvn deploy"
+   sh "${mvnhome}/bin/mvn package"
    
   
   }
