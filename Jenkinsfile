@@ -6,7 +6,7 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
   }
 
  stage ('build')    { 
-     sh "${mvnhome}/bin/mvn package"
+     sh "${mvnhome}/opt/apache-maven-3.6.3/bin/mvn package"
   }
     
     
