@@ -1,5 +1,5 @@
 node  {
-  def mvnhome = toolname:'maven3', type:'maven'
+  def mvnhome = tool name:'maven3', type:'maven'
     def "${mvnhome}/bin/mvn"   
 
 stage ('checkout') {
