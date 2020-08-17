@@ -15,10 +15,7 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
     sh """
     
     scp -o StrictHostKeyChecking=no /target/*.war root@172.31.34.1:/apache-tomcat-8.5.57/webapps/
-    
-    ssh root@172.31.34.1 /apache-tomcat-8.5.57/bin/shutdown.sh
-    
-    ssh root@172.31.34.1 /apache-tomcat-8.5.57/bin/startup.sh
+   
     
        """
     }
