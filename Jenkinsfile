@@ -20,7 +20,9 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
     
     shh root@172.31.34.1 /apache-tomcat-8.5.57/bin/startup.sh
     
-   """
+       """
+    }
+  }
     
 }
     
