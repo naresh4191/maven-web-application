@@ -12,10 +12,7 @@ git credentialsId: 'naresh', url: 'https://github.com/naresh4191/maven-web-appli
   }
   stage ('deploy to tomcat') {
     sshagent(['new-deployement']) {
-    sh " scp -o StrictHostKeyChecking=no /target/*.war root@172.31.34.1:/apache-tomcat-8.5.57/webapps/
-   
-    
-       "
+    sh " scp -o StrictHostKeyChecking=no /target/*.war root@172.31.34.1:/apache-tomcat-8.5.57/webapps"
     }
   }
     
